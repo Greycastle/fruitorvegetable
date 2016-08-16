@@ -1,29 +1,8 @@
-
 <% if @correct %>
-<h1>You couldn't be more right, one point to you!</h1>
+<h1>That's right, it's a <span class="right"><%=@verify_plant['type']%></span>!</h1>
 <% else %>
-<h1>You couldn't be more wrong! It's actually a <%=@verify_plant['type']%>.</h1>
+<h1>Noooeeeee!? It's actually a <span class="wrong"><%=@verify_plant['type']%></span>!</h1>
 <% end %>
 <span>The latin name for <%=@verify_plant['name']%> is <%=@verify_plant['latin']%>.</span>
 
-<p>what is</p>
-<h1><%= @plant['name'] %>
-<% link_to %>
-<a class="btn" id="fruit-btn" href="<%=@url%>&is=fruit">fruit</a><span> or </span><a class="btn" id="vegetable-btn" href="<%=@url%>&is=vegetable">vegetable</a>
-
-<script type="text/javascript">
-  $(document).keydown(function(e) {
-    left_key = 37;
-    right_key = 39;
-    switch(e.which) {
-        case left_key:
-          $('#fruit-btn')[0].click();
-        break;
-
-        case right_key:
-        $('#vegetable-btn')[0].click();
-        break;
-    }
-    e.preventDefault(); // scroll/move caret
-  });
-</script>
+<%= render partial: 'question' %>

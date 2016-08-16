@@ -8,7 +8,7 @@ class BaseController < ApplicationController
             plant: @plant['name'],
             only_path: true)
   end
-
+  
   def index
     generate_plant
   end
