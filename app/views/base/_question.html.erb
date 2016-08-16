@@ -1,0 +1,25 @@
+<div>
+  <p><span class="question">what is</span></p>
+  <p><span id="plant-name"><%= @plant['name'] %></span></p>
+</div>
+<div class="buttons-box">
+  <a class="btn" id="fruit-btn" href="<%=@url%>&is=fruit">fruit</a><span class="or"> or </span><a class="btn" id="vegetable-btn" href="<%=@url%>&is=vegetable">vegetable</a>
+</div>
+
+<script type="text/javascript">
+  $(document).keydown(function(e) {
+    left_key = 37;
+    right_key = 39;
+    switch(e.which) {
+        case left_key:
+          $('#fruit-btn')[0].click();
+          e.preventDefault(); // scroll/move caret
+        break;
+
+        case right_key:
+          $('#vegetable-btn')[0].click();
+          e.preventDefault(); // scroll/move caret
+        break;
+    }
+  });
+</script>
