@@ -5,4 +5,12 @@
 <% end %>
 <span>The latin name for <%=@verify_plant['name']%> is <%=@verify_plant['latin']%>.</span>
 
+<div id="correct-answers-container">
+  <% if @total_correct == 0 %>
+    <span>You've <%=@total%> plants but <span class="bad">no</span> right guesses!
+  <% else %>
+    <span>This far it's been <%=@total_correct%> right answers (of <%=@total%>).</span>
+  <% end %>
+</div>
+
 <%= render partial: 'question' %>
