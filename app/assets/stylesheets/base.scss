@@ -3,6 +3,16 @@ body {
   color: #381D2A;
 }
 
+a, a:active, a:visited {
+  color: #BA5624;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #381D2A;
+  text-decoration: underline;
+}
+
 .buttons-box {
   margin-top: 40px;
 }
@@ -51,4 +61,19 @@ body {
 
 h1 {
   font-size: 40px;
+}
+
+#protip {
+  display: block;
+  margin-top: 40px;
+  font-style: italic;
+  font-size: 0.8em;
+}
+
+#about {
+  margin-top: 20px;
+}
+
+#about-text {
+  margin: 0% 10%;
 }
