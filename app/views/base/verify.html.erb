@@ -7,7 +7,7 @@
 
 <div id="correct-answers-container">
   <% if @total_correct == 0 %>
-    <span>You've <%=@total%> plants but <span class="bad">no</span> right guesses!
+    <span>You've <%=@total%> plants but <span class="bad">no</span> right guesses!</span>
   <% else %>
     <span>This far it's been <%=@total_correct%> right answers (of <%=@total%>).</span>
   <% end %>
