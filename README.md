@@ -4,6 +4,8 @@ Ruby on rails application for a simple this-or-that game
 
 ![How the app looks](./example.gif)
 
+See also [the react version](https://github.com/ddikman/fruit-or-veg-react) of this project.
+
 ## Code walkthrough
 
 Most of the code is in the [app/views/base](./app/views/base) folder really.
